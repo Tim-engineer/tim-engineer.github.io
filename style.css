@@ -99,7 +99,7 @@ h3 { font-size: 20px; letter-spacing: -0.02em; line-height: 1.2; }
 .big { font-size: clamp(56px, 6vw, 88px); font-weight: 600; letter-spacing: -0.04em; line-height: .9; }
 .stat-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
 .stat-head p { text-align: right; max-width: 18ch; font-size: 15px; line-height: 1.35; }
-.apps { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin-top: auto; }
+.apps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: auto; }
 .apps span { aspect-ratio: 1; border-radius: 30%; background: rgb(110 24 8 / .16); }
 .apps span:nth-child(3n) { background: rgb(110 24 8 / .32); }
 .apps span:nth-child(4n + 1) { background: rgb(110 24 8 / .55); }
