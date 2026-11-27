@@ -63,8 +63,8 @@ h3 { font-size: 20px; letter-spacing: -0.02em; line-height: 1.2; }
 .hero::after { content: ""; position: absolute; z-index: -1; right: -10%; bottom: -40%; width: 70%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(closest-side, rgba(246, 146, 30, .22), rgba(226, 58, 46, .10) 50%, transparent); }
 .hero-text { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
 .roles { display: inline-flex; flex-wrap: wrap; border-radius: 100px; background: rgb(var(--raised)); box-shadow: inset 0 0 0 1px rgb(var(--line) / .06); font-size: 14px; font-weight: 500; }
-.roles span { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; }
-.roles span + span { box-shadow: inset 1px 0 0 rgb(var(--line) / .1); }
+.roles > * { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; }
+.roles > * + * { box-shadow: inset 1px 0 0 rgb(var(--line) / .1); }
 .roles .i { width: 16px; height: 16px; color: var(--warm-b); }
 .motto .warm { display: inline-block; }
 .motto { font-size: clamp(20px, 2vw, 28px); font-weight: 500; letter-spacing: -0.02em; line-height: 1.25; max-width: 26ch; color: rgb(var(--ink)) !important; }
@@ -75,6 +75,8 @@ h3 { font-size: 20px; letter-spacing: -0.02em; line-height: 1.2; }
 .btn-line { background: transparent; color: rgb(var(--ink)); box-shadow: inset 0 0 0 1px rgb(var(--line) / .18); }
 .btn-warm { background: var(--warm); color: #fff; }
 .icon-link { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 100px; color: rgb(var(--muted)); transition: color .2s, background .2s; }
+.roles a { color: rgb(var(--muted)); transition: color .2s; }
+.roles a:hover { color: rgb(var(--ink)); }
 .icon-link:hover { color: rgb(var(--ink)); background: rgb(var(--raised)); }
 
 .stage { position: relative; width: 300px; margin-right: 32px; }
@@ -208,8 +210,8 @@ h3 { font-size: 20px; letter-spacing: -0.02em; line-height: 1.2; }
 
 /* role pills are separate; feature chips stand beside the phone instead of over it */
 .roles { background: none; box-shadow: none; gap: 8px; border-radius: 0; }
-.roles span { padding: 7px 14px; border-radius: 100px; background: rgb(var(--raised)); box-shadow: inset 0 0 0 1px rgb(var(--line) / .07); }
-.roles span + span { box-shadow: inset 0 0 0 1px rgb(var(--line) / .07); }
+.roles > * { padding: 7px 14px; border-radius: 100px; background: rgb(var(--raised)); box-shadow: inset 0 0 0 1px rgb(var(--line) / .07); }
+.roles > * + * { box-shadow: inset 0 0 0 1px rgb(var(--line) / .07); }
 .stage { width: auto; margin-right: 8px; display: flex; align-items: center; gap: 20px; }
 .phone { margin: 0; flex: none; }
 .chips { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
